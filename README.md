@@ -1,4 +1,4 @@
-# platzymusic
+# vueMusic
 
 > Proyecto de curso de vue.js de platzy
 

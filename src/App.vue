@@ -1,7 +1,8 @@
 <template lang="pug">
 #app
   img(src='https://ecaminux.github.com/vuemusic/dist/logo.png')
-  h1 Platzi music
+  h1 Vue music
+  h2 Un projecto realizado en el :a(href="https://goo.gl/zPaIiU") curso de Platzi
   select(v-model="selectedCountry") 
     option(v-for="country in countries" v-bind:value="country.value") {{country.name}}
   spinner(v-show="loading")
@@ -25,7 +26,9 @@ export default {
       countries: [
         {name: 'Argentina', value: 'argentina'},
         {name: 'Colombia', value: 'colombia'},
+        {name: 'Ecuador', value: 'ecuador'},
         {name: 'España', value: 'spain'},
+        {name: 'Peru', value: 'peru'},
       ],
       selectedCountry: 'argentina',
       loading: true,
